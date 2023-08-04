@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Script.css">
+    <title>Css-Генератор</title>
+</head>
+<body>
+    <input type="range"  min = "0" max="500"  value = "0" id ="width" oninput="gen_width()"/>
+    <p>Width:</p>
+    <p id="width-p">0</p>
+    <p>Height:</p>
+    <input type="range"  min = "0" max="500"  value = "0" id ="height" oninput="gen_height()"/>
+    <p id="height-p">0</p>
+    <p>border-Top-left-radius:</p>
+    <input type="range"  min = "0" max="500"  value = "0" id ="border-Top-left-radius" oninput="gen_border_left()"/>
+    <p id="border-Top-left-radius-p">0</p>
+    <p>border-Top-Right-radius</p>
+    <input type="range"  min = "0" max="500"  value = "0" id ="border-Top-Right-radius" oninput="gen_border_Right()"/>
+    <p id="border-Top-right-radius-p">0</p>
+    <p>Background-color:</p>
+    <input type="color" id="color" oninput="gen_color()"/>
+    <div id="generator" oninput="generate()"></div>
+    <script src="Script/Script.js"></script>
+</body>
+</html>
